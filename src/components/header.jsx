@@ -1,5 +1,8 @@
 import React from 'react'
 import logo from '../img/logo.png';
+import { useState } from 'react'
+import { Dialog } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -10,7 +13,7 @@ const navigation = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  
+
   return (
     <header className="absolute inset-x-0 top-0 z-50">
     <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
