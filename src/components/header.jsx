@@ -5,10 +5,11 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Home', href: '#' },
+  { name: 'Misión', href: '#' },
+  { name: 'Visión', href: '#' },
+  { name: 'Politicas De privacidad', href: '#' },
+  { name: 'Contactanos', href: '#' },
 ]
 
 export default function Header() {
@@ -44,11 +45,6 @@ export default function Header() {
           </a>
         ))}
       </div>
-      <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-          Log in <span aria-hidden="true">&rarr;</span>
-        </a>
-      </div>
     </nav>
     <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
       <div className="fixed inset-0 z-50" />
@@ -72,7 +68,6 @@ export default function Header() {
           </button>
         </div>
         <div className="mt-6 flow-root">
-          <div className="-my-6 divide-y divide-gray-500/10">
             <div className="space-y-2 py-6">
               {navigation.map((item) => (
                 <a
@@ -84,15 +79,6 @@ export default function Header() {
                 </a>
               ))}
             </div>
-            <div className="py-6">
-              <a
-                href="#"
-                className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-              >
-                Log in
-              </a>
-            </div>
-          </div>
         </div>
       </Dialog.Panel>
     </Dialog>

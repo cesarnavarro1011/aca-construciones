@@ -12,7 +12,7 @@ function App() {
   <div>
     <Header/>
     <Home/>
-    {/* <SectionsMissionvision/> */}
+    <SectionsMissionvision/>
     <SectionsPolitics/>
     <SectionsContact/>
   </div>
